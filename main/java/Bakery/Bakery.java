@@ -9,12 +9,12 @@ public class Bakery {
         System.out.println("Witaj w naszej piekarni!");
         LocalTime userTime = LocalTime.now();
         int currentHour = userTime.getHour();
-        int openingHour = 9;
-        int closingHour = 21;
+        final int OPENING_HOUR = 9;
+        final int CLOSING_HOUR = 21;
 
-        if (currentHour < openingHour) {
+        if (currentHour < OPENING_HOUR) {
             System.out.println("Jesteś za wcześnie. Piekarnia otwiera się o 9.");
-        } else if (currentHour >= closingHour) {
+        } else if (currentHour >= CLOSING_HOUR) {
             System.out.println("Przyszedłeś za późno. Piekarnia zamyka się o 21.");
         } else {
             System.out.println("Piekarnia jest otwarta. Zapraszamy!");
@@ -24,7 +24,6 @@ public class Bakery {
 
     private static void chooseProducts() {
         String[] availableProductsInTheShop = {"1. Chleb, 2. Ciasto, 3. Ciasteczka, 4. Tort, 5. Rogaliki"};
-
 
         int userChoice;
         int finalPrize = 0;
