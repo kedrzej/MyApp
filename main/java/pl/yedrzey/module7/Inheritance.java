@@ -2,78 +2,7 @@ package pl.yedrzey.module7;
 
 public class Inheritance {
     public static void main(String[] args) {
-        class Thing {
 
-            public String toString() {
-                return "Jestem istotą.";
-            }
-        }
-        class LivingThing extends Thing {
-
-            public String toString() {
-                return "Jestem istotą żywą.";
-            }
-        }
-        class NonLivingThing extends Thing {
-
-            public String toString() {
-                return "Jestem istotą nieożywioną.";
-            }
-        }
-        class Rock extends NonLivingThing {
-
-            public String toString() {
-                return "Jestem skałą.";
-            }
-        }
-        class Air extends NonLivingThing {
-
-            public String toString() {
-                return "Jestem powietrzem.";
-            }
-        }
-        class Animal extends LivingThing {
-
-            public String toString() {
-                return "Jestem zwierzęciem.";
-            }
-        }
-        class Plant extends LivingThing {
-
-            public String toString() {
-                return "Jestem rośliną.";
-            }
-        }
-        class Bird extends Animal {
-
-            public String toString() {
-                return "Jestem ptakiem.";
-            }
-        }
-        class Reptile extends Animal {
-
-            public String toString() {
-                return "Jestem gadem.";
-            }
-        }
-        class Mammal extends Animal {
-
-            public String toString() {
-                return "Jestem ssakiem.";
-            }
-        }
-        class Dog extends Mammal {
-
-            public String toString() {
-                return "Jestem psem.";
-            }
-        }
-        class Cat extends Mammal {
-
-            public String toString() {
-                return "Jestem kotem.";
-            }
-        }
         Thing thing = new Thing();
         LivingThing livingThing = new LivingThing();
         NonLivingThing nonLivingThing = new NonLivingThing();
@@ -100,5 +29,88 @@ public class Inheritance {
         System.out.println(dog);
         System.out.println(cat);
     }
+}
 
+    class Thing {
+
+        public String toString() {
+            return "Jestem istotą.";
+        }
+    }
+
+    class LivingThing extends Thing {
+
+        public String toString() {
+            return "Jestem istotą żywą.";
+        }
+    }
+
+    class NonLivingThing extends Thing {
+
+        public String toString() {
+            return "Jestem istotą nieożywioną.";
+        }
+    }
+
+    class Rock extends NonLivingThing {
+
+        public String toString() {
+            return "Jestem skałą.";
+        }
+    }
+
+    class Air extends NonLivingThing {
+
+        public String toString() {
+            return "Jestem powietrzem.";
+        }
+    }
+
+    class Animal extends LivingThing {
+
+        public String toString() {
+            return "Jestem zwierzęciem.";
+        }
+    }
+
+    class Plant extends LivingThing {
+
+        public String toString() {
+            return "Jestem rośliną.";
+        }
+    }
+
+    class Bird extends Animal {
+
+        public String toString() {
+            return "Jestem ptakiem.";
+        }
+    }
+
+    class Reptile extends Animal {
+
+        public String toString() {
+            return "Jestem gadem.";
+        }
+    }
+
+    class Mammal extends Animal {
+
+        public String toString() {
+            return "Jestem ssakiem.";
+        }
+    }
+
+    class Dog extends Mammal {
+
+        public String toString() {
+            return "Jestem psem.";
+        }
+    }
+
+    class Cat extends Mammal {
+
+        public String toString() {
+            return "Jestem kotem.";
+        }
     }
