@@ -1,6 +1,6 @@
 package pl.yedrzey.module7;
 
-public class Heritage {
+public class Inheritance {
     public static void main(String[] args) {
         class Thing {
 
